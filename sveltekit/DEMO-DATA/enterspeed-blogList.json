@@ -20,7 +20,7 @@
         "properties": {
           "url": "{item.url}",
           "title": "{item.properties.title}",
-          "thumbnail": "{item.properties.featuredImage}",
+          "thumbnail": "{item.properties.thumbnail}",
           "excerpt": "{item.properties.excerpt}",
           "date": "{item.properties.date}",
           "author": {
