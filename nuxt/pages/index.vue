@@ -43,8 +43,8 @@ const posts = data.blogList.content;
         >
           <img
             :src="post.thumbnail"
+            :alt="post.title"
             class="object-cover w-full h-64"
-            alt="{post.title}"
           />
           <div class="p-5">
             <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
