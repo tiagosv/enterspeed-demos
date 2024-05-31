@@ -1,9 +1,9 @@
 {
   "info": {
-    "_postman_id": "a7ca324a-fd3f-4d41-bd93-7672198ac09f",
+    "_postman_id": "9697e670-711a-4a1d-adb6-f7fc8e5907cd",
     "name": "Enterspeed demos",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "19587997"
+    "_exporter_id": "30653564"
   },
   "item": [
     {
@@ -12,21 +12,6 @@
         {
           "name": "5 Key Web Performance Metrics to Guide Your SEO",
           "request": {
-            "auth": {
-              "type": "apikey",
-              "apikey": [
-                {
-                  "key": "value",
-                  "value": "[INSERT-YOUR-OWN-API-KEY]",
-                  "type": "string"
-                },
-                {
-                  "key": "key",
-                  "value": "X-Api-Key",
-                  "type": "string"
-                }
-              ]
-            },
             "method": "POST",
             "header": [],
             "body": {
@@ -50,21 +35,6 @@
         {
           "name": "A Complete Guide to Web Performance Optimization",
           "request": {
-            "auth": {
-              "type": "apikey",
-              "apikey": [
-                {
-                  "key": "value",
-                  "value": "[INSERT-YOUR-OWN-API-KEY]",
-                  "type": "string"
-                },
-                {
-                  "key": "key",
-                  "value": "X-Api-Key",
-                  "type": "string"
-                }
-              ]
-            },
             "method": "POST",
             "header": [],
             "body": {
@@ -88,21 +58,6 @@
         {
           "name": "Website Speed: Expectations vs. Reality",
           "request": {
-            "auth": {
-              "type": "apikey",
-              "apikey": [
-                {
-                  "key": "value",
-                  "value": "[INSERT-YOUR-OWN-API-KEY]",
-                  "type": "string"
-                },
-                {
-                  "key": "key",
-                  "value": "X-Api-Key",
-                  "type": "string"
-                }
-              ]
-            },
             "method": "POST",
             "header": [],
             "body": {
@@ -126,21 +81,6 @@
         {
           "name": "The Next Big Thing in Web Performance",
           "request": {
-            "auth": {
-              "type": "apikey",
-              "apikey": [
-                {
-                  "key": "value",
-                  "value": "[INSERT-YOUR-OWN-API-KEY]",
-                  "type": "string"
-                },
-                {
-                  "key": "key",
-                  "value": "X-Api-Key",
-                  "type": "string"
-                }
-              ]
-            },
             "method": "POST",
             "header": [],
             "body": {
@@ -164,21 +104,6 @@
         {
           "name": "We Analysed 1.000 Websites And Here's What We Found",
           "request": {
-            "auth": {
-              "type": "apikey",
-              "apikey": [
-                {
-                  "key": "value",
-                  "value": "[INSERT-YOUR-OWN-API-KEY]",
-                  "type": "string"
-                },
-                {
-                  "key": "key",
-                  "value": "X-Api-Key",
-                  "type": "string"
-                }
-              ]
-            },
             "method": "POST",
             "header": [],
             "body": {
@@ -202,21 +127,6 @@
         {
           "name": "How fast should your website be?",
           "request": {
-            "auth": {
-              "type": "apikey",
-              "apikey": [
-                {
-                  "key": "value",
-                  "value": "[INSERT-YOUR-OWN-API-KEY]",
-                  "type": "string"
-                },
-                {
-                  "key": "key",
-                  "value": "X-Api-Key",
-                  "type": "string"
-                }
-              ]
-            },
             "method": "POST",
             "header": [],
             "body": {
@@ -242,21 +152,6 @@
     {
       "name": "Blog collection",
       "request": {
-        "auth": {
-          "type": "apikey",
-          "apikey": [
-            {
-              "key": "value",
-              "value": "[INSERT-YOUR-OWN-API-KEY]",
-              "type": "string"
-            },
-            {
-              "key": "key",
-              "value": "X-Api-Key",
-              "type": "string"
-            }
-          ]
-        },
         "method": "POST",
         "header": [],
         "body": {
@@ -271,11 +166,60 @@
         "url": {
           "raw": "https://api.enterspeed.com/ingest/v2/1",
           "protocol": "https",
-          "host": ["api", "enterspeed", "com"],
-          "path": ["ingest", "v2", "1"]
+          "host": [
+            "api",
+            "enterspeed",
+            "com"
+          ],
+          "path": [
+            "ingest",
+            "v2",
+            "1"
+          ]
         }
       },
       "response": []
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "value",
+        "value": "{{X-Api-Key}}",
+        "type": "string"
+      },
+      {
+        "key": "key",
+        "value": "X-Api-Key",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "X-Api-Key",
+      "value": "[INSERT-YOUR-OWN-API-KEY]"
     }
   ]
 }
